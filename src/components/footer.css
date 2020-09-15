@@ -1,6 +1,14 @@
+article{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn{
-    padding: 1rem;
+    box-sizing: border-box;
     background-color: black;
+    padding: 8px 20px;
     color: #ffffff;
     border-radius: 5px;
     margin: 0 1rem;

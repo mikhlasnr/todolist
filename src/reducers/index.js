@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux'
-import todos from './todos'
+import list from './list'
 import filter from './filter'
 
 
 
 export default combineReducers({
-    todos,
+    list,
     filter
 })
