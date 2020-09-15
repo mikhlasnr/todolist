@@ -1,28 +1,24 @@
 import React from 'react'
-import {setFilter} from '../actions'
-import {connect} from 'react-redux'
-
 import './footer.css'
-function Footer({dispatch}) {
+
+function Footer({filter}) {
     return (
         <div>
             <span>Filter : </span>
             <span 
                 className="btn" 
-                onClick={() => dispatch(setFilter("ALL"))}
+                onClick={() => filter("ALL")}
             >ALL</span>
             <span 
                 className="btn"
-                onClick={() => dispatch(setFilter("COMPLETED"))}
+                onClick={() => filter("COMPLETED")}
             >Completed</span>
             <span 
                 className="btn"
-                onClick={() => dispatch(setFilter("ACTIVE"))}
+                onClick={() => filter("ACTIVE")}
             >Active</span>
         </div>
     )
 }
 
-
-
-export default connect()(Footer)
+export default Footer
